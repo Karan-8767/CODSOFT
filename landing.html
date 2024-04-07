@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Landing Page</title>
+  <style>
+    /* Custom CSS for landing page */
+/* Header */
+header {
+  background-color: #1E90FF;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+
+}
+
+
+header nav ul li {
+  margin-right: 20px;
+  
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Hero section */
+#hero {
+  background-color: #ffffff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+#hero button {
+  padding: 10px 30px;
+  background-color: #1E90FF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#hero button:hover {
+  background-color: #007bff;
+}
+
+/* Features section */
+#features {
+  background-color: #f0f0f0;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#features h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.feature {
+  background-color: #ffffff;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Pricing section */
+#pricing {
+  background-color: #f0f0f0; 
+  padding: 50px 0;
+  text-align: center;
+}
+
+#pricing h2 {
+
+  font-size: 36px;
+  color: #45a049;
+  margin-bottom: 40px;
+}
+
+.pricing-plans {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.plan {
+  flex: 1;
+  background-color: #fff;
+  padding: 30px;
+  margin: 0 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.plan h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.plan p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.plan button {
+  padding: 10px 30px;
+  background-color: #4CAF50; /* Green button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.plan button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+#contact {
+  color: ;
+  background-color: #f0f0f0;
+  padding: 90px ;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 36px;
+  color: #4CAF50; 
+  margin-bottom: 50px 0;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact textarea {
+  height: 150px 0;
+}
+
+#contact button[type="submit"] {
+  padding: 10px 30px;
+  background-color: #007bff; /* Light grey button */
+  color: #fff; /* Dark grey text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#contact button[type="submit"]:hover {
+  background-color: #ccc; /* Darker grey on hover */
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Welcome to Our Landing Page</h1>
+      <nav>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section id="hero">
+    <div class="container">
+      <h2>Revolutionize Your Business with Our Amazing Product</h2>
+      <p>Learn how our product can transform your business and help you achieve your goals.</p>
+      <button onclick="scrollToSection('#features')">Learn More</button>
+    </div>
+  </section>
+  
+  <section id="features">
+    <div class="container">
+      <h2>Features</h2>
+      <div class="feature">
+        <h3>Feature 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga culpa tempora, doloribus eum velit asperiores. Nihil porro nobis repellendus ducimus. Doloribus nobis nam, minus architecto soluta facilis voluptate temporibus inventore.</p>
+      </div>
+      <div class="feature">
+        <h3>Feature 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga culpa tempora, doloribus eum velit asperiores. Nihil porro nobis repellendus ducimus. Doloribus nobis nam, minus architecto soluta facilis voluptate temporibus inventore.</p>
+      </div>
+      <div class="feature">
+        <h3>Feature 3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga culpa tempora, doloribus eum velit asperiores. Nihil porro nobis repellendus ducimus. Doloribus nobis nam, minus architecto soluta facilis voluptate temporibus inventore.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="pricing">
+    <div class="container">
+      <h2>Pricing</h2>
+      <p>Our flexible pricing plans cater to businesses of all sizes.</p>
+      <div class="pricing-plans">
+        <div class="plan">
+          <h3>Basic</h3>
+          <p>$19/month</p>
+          <button>Select Plan</button>
+        </div>
+        <div class="plan">
+          <h3>Pro</h3>
+          <p>$39/month</p>
+          <button>Select Plan</button>
+        </div>
+        <div class="plan">
+          <h3>Enterprise</h3>
+          <p>Contact Us</p>
+          <button>Contact Us</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Reach out to us for any inquiries or support.</p>
+      <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Advanced Landing Page. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function scrollToSection(sectionId) {
+  document.querySelector(sectionId).scrollIntoView({
+    behavior: 'smooth'
+  });
+}
+
+  </script>
+</body>
+</html>
